@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: "Inter-Bold";
+    src:
+      local("Inter-Bold"),
+      url('./assets/fonts/static/Inter-Bold.ttf')  format('truetype');  
+  }
+
+  @font-face {
+    font-family: "Inter-Regular";
+    src:
+      local("Inter-Regular"),
+      url('./assets/fonts/static/Inter-Regular.ttf')  format('truetype');  
+  }
+
+  @font-face {
+    font-family: "Inter-SemiBold";
+    src:
+      local("Inter-SemiBold"),
+      url('./assets/fonts/static/Inter-SemiBold.ttf')  format('truetype');  
+  }
+
+  @font-face {
+    font-family: "Inter-VariableFont_slnt,wght";
+    src:
+      local("Inter-VaribleFont_slnt,wght"),
+      url('./assets/fonts/static/Inter-VariableFont_slnt,wght.ttf')  format('truetype');  
+  }
+
+  :root{
+    /* colors */
+    --grey-900: #141414; 
+    --grey-800: #1f1f1f; 
+    --grey-700: #333333; 
+    --green: #c4f82a; 
+    --white: #ffffff; 
+
+    /* Typography*/
+    --text-preset-1: 1.5rem; 
+    --text-preset-2: 0.875rem; 
+    
+    /* Spacing */
+    --spacing-50: 0.25rem; 
+    --spacing-100: 0.5rem; 
+    --spacing-200: 1rem; 
+    --spacing-300: 1.5rem; 
+    --spacing-500: 2.5rem;
+
+}
+
+
+
