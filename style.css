@@ -28,6 +28,7 @@
   }
 
   :root{
+    box-sizing: border-box;
     /* colors */
     --grey-900: #141414; 
     --grey-800: #1f1f1f; 
@@ -42,11 +43,128 @@
     /* Spacing */
     --spacing-50: 0.25rem; 
     --spacing-100: 0.5rem; 
+    --spacing-150: 0.75rem;
     --spacing-200: 1rem; 
     --spacing-300: 1.5rem; 
     --spacing-500: 2.5rem;
 
 }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+
+body{
+  background-color: var(--grey-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+}
+.main-layout{
+  margin:auto;
+  display: flex; 
+  max-width: 24rem; 
+  padding: var(--spacing-300); 
+  flex-direction: column; 
+  align-items: center; 
+  gap: var(--spacing-300); 
+  flex: 1 0 0; 
+  border-radius: 0.75rem; 
+  background-color: var(--grey-800)
+}
+
+.profile-pic{
+  border-radius: 62.4375rem; 
+  max-width: 5rem;
+}
+
+body, .profile-header, .profile-location, .profile-description, .profile-link-list{
+  margin: 0;
+}
+
+.profile-header{
+  color: var(--white); 
+  text-align:center; 
+  font-family: Inter-Bold, Arial; 
+  line-height: 150%; 
+  font-size: var(--text-preset-1);
+  font-style: normal; 
+  font-weight: 600; 
+}
+
+.profile-location{
+  color: var(--green); 
+  text-align:center; 
+  font-family: Inter-Bold, Arial; 
+  font-size: var(--text-preset-2); 
+  line-height: 150%; 
+  font-weight: 700;
+}
+
+.profile-description{
+  color: var(--white); 
+  text-align:center; 
+  font-family: Inter-Regular; 
+  font-size: var(--text-preset-2); 
+  font-style: normal; 
+  line-height: 150%; 
+  font-weight: 400;
+}
+
+.profile-link-list{
+  padding-left: 0;
+  list-style: none; 
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  gap: var(--spacing-200); 
+  align-self: stretch; 
+}
+.profile-list-item{
+  display: flex; 
+  padding: var(--spacing-150);
+  justify-content: center; 
+  align-items:center; 
+  gap: var(--spacing-100); 
+  align-self: stretch;
+  background-color: var(--grey-700); 
+  border-radius: 0.5rem;
+  color: var(--white); 
+}
+
+.profile-list-item:hover{ 
+  background-color: var(--green); 
+}
+.profile-list-item:hover > .profile-link{
+  color: var(--grey-700);
+}
+
+.profile-link, .profile-link:visited {
+  font-family: Inter-Bold, Arial; 
+  font-style: normal; 
+  line-height: 150%; 
+  font-weight: 700;
+  color: var(--white); 
+  text-decoration:none;
+}
 
 
 
+
+
+@media screen  and (min-width: 48rem){ /* 768px */
+  body{
+    padding: var(--spacing-500); 
+ 
+  }
+  .main-layout{
+    padding: var(--spacing-500); 
+  }
+  
+}
