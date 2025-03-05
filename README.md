@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [solution URL here](https://www.frontendmentor.io/solutions/social-links-page-GVSIpQa7j2)
+- [live site URL here](https://social-links-profile-opal-delta.vercel.app/)
 
 ## My process
 
