@@ -154,6 +154,11 @@ body, .profile-header, .profile-location, .profile-description, .profile-link-li
   text-decoration:none;
 }
 
+.profile-link:focus-visible{
+  outline-color: var(--green);
+  outline-offset: 5px;
+}
+
 
 
 
